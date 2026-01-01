@@ -1,0 +1,48 @@
+@import "tailwindcss";
+
+@theme {
+  --color-background: #FFFCF9;
+  --color-foreground: #2D2D2D;
+  --color-primary: #F7E6E6;
+  --color-primary-foreground: #6B5B54;
+  --color-secondary: #8FA38F;
+  --color-secondary-foreground: #FFFFFF;
+  --color-accent: #6B5B54;
+  --color-accent-foreground: #FFFFFF;
+  
+  --font-serif: var(--font-playfair), serif;
+  --font-sans: var(--font-inter), sans-serif;
+}
+
+/* Utilitaires personnalisés pour la compatibilité avec le code existant qui utilise bg-background */
+@layer utilities {
+  .bg-background {
+    background-color: var(--color-background);
+  }
+  .text-foreground {
+    color: var(--color-foreground);
+  }
+  .text-accent {
+    color: var(--color-accent);
+  }
+  .font-serif {
+    font-family: var(--font-serif);
+  }
+  .font-sans {
+    font-family: var(--font-sans);
+  }
+}
+
+/* Styles de base */
+@layer base {
+  body {
+    background-color: var(--color-background);
+    color: var(--color-foreground);
+    font-family: var(--font-sans);
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-serif);
+    color: var(--color-accent);
+  }
+}
