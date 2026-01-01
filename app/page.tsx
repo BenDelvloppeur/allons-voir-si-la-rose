@@ -85,7 +85,7 @@ export default function Home() {
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
             {[
               { title: "Bouquets de Saison", img: "/images/creations/bouquet-saison-rond.jpg", href: "/creations", desc: "La fraîcheur du moment" },
-              { title: "Mariages", img: "/images/mariage/ahmed-DGivPYwcRls-unsplash.jpg", href: "/mariage", desc: "Pour le plus beau jour" },
+              { title: "Mariages", img: "/images/mariage/lieux reception.jpg", href: "/mariage", desc: "Pour le plus beau jour" },
               { title: "Deuil & Hommage", img: "/images/deuil/hanna-morjane-LPmfi1ITENM-unsplash.jpg", href: "/deuil", desc: "Accompagner avec douceur" },
               { title: "Plantes Vertes", img: "/images/creations/md-nazmul-haque-nayeem-BWK7wCWwVJk-unsplash.jpg", href: "/creations", desc: "Nature durable" },
             ].map((item, idx) => (
